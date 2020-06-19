@@ -17,10 +17,11 @@ mongoose.connect(uri, {
         useCreateIndex: true,
         useUnifiedTopology: true
     })
-    .then(() => console.log("💻 Mondodb database Connected Successfully!!"))
+    .then(() => console.log("💻 Mongodb database Connected Successfully!!"))
     .catch(err => console.error(err));
 
 
+// the routing method of the users,exercise
 const experciseRouter = require("./routes/exercises");
 const usersRouter = require("./routes/users");
 app.use('/exercises', experciseRouter);
